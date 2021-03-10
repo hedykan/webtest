@@ -14,7 +14,7 @@ func main() {
 	e := echo.New()
 	
 	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, "Hello, everyone!")
+		return c.String(http.StatusOK, "Hello, everyone!\n可以试试在地址栏输入:\nhttp://localhost:1323/users/名字\nhttp://localhost:1323/sort/逗号数字字符串")
 	})
 	
 	e.GET("/users/:id", getUser)
